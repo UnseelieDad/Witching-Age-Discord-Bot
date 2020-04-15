@@ -12,6 +12,8 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 
 bot = commands.Bot(command_prefix="!")
 
+# add roll better command
+
 @bot.event
 async def on_ready():
     print(f"{bot.user.name} has connected to Discord!")
