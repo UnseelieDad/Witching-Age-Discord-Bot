@@ -61,9 +61,10 @@ async def roll_dice(ctx, roll_string : str):
         modifier = int(roll_string[4])
         if mod_sign == "-":
             total -= modifier
+            response += f" - {modifier}"
         elif mod_sign == '+':
             total += modifier
-        response += f" + {modifier}"
+            response += f" + {modifier}"
 
     response += f"\n= {total}"
 
